@@ -9,8 +9,38 @@ Dive into the world of AI with this Ollama Voice Bot! This tutorial shows you ho
 - **Advanced NLP:** LLAMA 3 with Ollama allows the bot to understand and generate natural language responses.
 - **Speech Synthesis:** ElevenLabs converts text responses into realistic, natural-sounding speech.
 
-## How to Use:
-Step-by-step instructions guide you through setting up the environment, integrating the APIs, and deploying the AI bot.
+## How to build:
+This guide will help you set up a real-time speech transcription and response system using AssemblyAI for transcription, LLAMA 3 for generating responses, and ElevenLabs for streaming the response as live audio.
+
+## Step 1: Install Python Libraries
+
+You'll need to install several Python libraries and other dependencies to get started. Here are the installation instructions for various components:
+
+### Install Python Libraries
+```bash
+pip install ollama
+pip install "assemblyai[extras]"
+pip install elevenlabs
+```
+Install Additional Dependencies
+For Debian/Ubuntu:
+
+```bash
+apt install portaudio19-dev
+```
+For MacOS:
+
+```bash
+brew install portaudio
+brew install mpv
+```
+
+### Download the LLAMA 3 Model Locally
+To use LLAMA 3 in your project, you need to pull the model data onto your local machine. Run the following command in your terminal:
+
+```bash
+ollama pull llama3
+```
 
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6ghNRkVNODo/0.jpg)](https://www.youtube.com/watch?v=6ghNRkVNODo)
